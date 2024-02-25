@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all product - redstore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css"
+        integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="">home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/1177234-200.png" width="30px" height="30px">
+            <img src="images/1177234-200.png" class="menu-icon" onclick="menutoggle()">
+
+
+        </div>
+
+
+    </div>
+   
+<!-- ---------------------cart items details-------------------  -->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>products</th>
+                <th>quantity</th>
+                <th>subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/download (1).jpeg" >
+                        <div>
+                            <p> red printed tshirt</p>
+                            <small>price: $50.00</small>
+                            <br>
+                            <a href="">remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <th>products</th>
+                <th>quantity</th>
+                <th>subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/images (2).jpeg" >
+                        <div>
+                            <p> red printed tshirt</p>
+                            <small>price: $70.00</small>
+                            <br>
+                            <a href="">remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <th>products</th>
+                <th>quantity</th>
+                <th>subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/product-2.jpg" >
+                        <div>
+                            <p> red printed tshirt</p>
+                            <small>price: $80.00</small>
+                            <br>
+                            <a href="">remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+        </table>
+    </div>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>subtotal</td>
+                <td>200.00</td>
+            </tr>
+            <tr>
+                <td>tax</td>
+                <td>$25.00</td>
+            </tr>
+            <tr>
+                <td>total</td>
+                <td>$230.00</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+    <!-- ---------------footer--------------- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>download our app</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="app-logo">
+                        <img src="images/download (3).jpeg">
+                        <img src="images/download (4).jpeg">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero et at eaque dolorem officia.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>useful link</h3>
+                    <ul>
+                        <li>coupons</li>
+                        <li>blog post</li>
+                        <li>return policy</li>
+                        <li>joins affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>follow us</h3>
+                    <ul>
+                        <li>facebook</li>
+                        <li>twitter</li>
+                        <li>instagram</li>
+                        <li>youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copyright 2020 - easy tutorials</p>
+        </div>
+    </div>
+    <!-- ------------------js for toggle----------------- -->
+    <script>
+        var menuitems = document.getElementById("menuitems");
+
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menuitems.style.maxHeight == "0px") {
+
+                menuitems.style.maxHeight = "200px";
+
+            }
+            else {
+                menuitems.style.maxHeight = "0px";
+
+            }
+        }
+    </script>
+
+   
+
+</body>
+
+</html>
